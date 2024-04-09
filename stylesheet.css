@@ -124,28 +124,48 @@ button{
     display: flex;
     margin: 5%;
     padding-left: 7%;
-    gap: 2%;
-    font-size: x-large;
+    gap: 3%;
+    font-size: large;
+    align-items: center;
+}
+
+.dash img{
+    width: 35px;
+    height: 45px;
+    filter: invert(1);
 }
 
 .side1,
 .side2{
-    justify-content: center;
+    font-weight:600;
 }
 
 .side1 > ul{
     list-style: none;
-    display: grid;
-    grid-template-rows: repeat(6, 1fr);
-    gap: 14%;
     font-size: larger;
+    display: flex;
+    flex-direction: column;;
+}
+
+.side1 > ul li,
+.side2 > ul li{
+    display: flex;
+    gap: 5%;
+    align-items: end;
+    margin-bottom: 5%;
+    align-items: center;
+}
+
+.side1 img,
+.side2 img{
+    width: 20px;
+    height: 30px;
+    filter: invert(1);
 }
 
 .side2 > ul{
+    padding-top: 15px;
     list-style: none;
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    gap: 25%;
     font-size: larger;
 }
 
