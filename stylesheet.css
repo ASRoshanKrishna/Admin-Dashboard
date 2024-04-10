@@ -187,7 +187,8 @@ button:focus{
 }
 
 .side1 img,
-.side2 img{
+.side2 img,
+.cards img{
     width: 20px;
     height: 30px;
     filter: invert(1);
@@ -210,10 +211,13 @@ button:focus{
 
 .topics,
 .ano{
-    border: 1px solid white;
     padding-left: 10px;
     align-self: flex-end;
-    background-color: #4169E1;
+}
+
+.topics p,
+.ano p{
+    font-size: large; 
 }
 
 .topics{
@@ -225,55 +229,65 @@ button:focus{
     grid-template-columns: repeat(auto-fill, 500px);
     justify-content: space-around;
     gap: 3px;
-    border: 1px solid red;
     margin-bottom: 30px;
 }
 
-.cards > *{
+/* .cards > *{
     border: 1px solid red;
-}
+} */
 
 .cards{
-    border: 1px solid gold;
     height: clamp(135px,185px,200px);
     display: grid;
     grid-template-rows: 1fr 1fr 2fr;
     background-color: white;
     margin: 14px;
+    border-left: 6px solid #fcd34d;
+    border-radius: 9px;
+    box-shadow: 0px 4px 3px #cbd5e1; 
 }
 
 .c1{
     grid-row: 1;
     align-self: flex-end;
     padding-left: 5%;
+    font-weight: 600;
+    margin-bottom: 2px;
 }
 
 .c2{
     grid-row: 2;
     padding-left: 5%;
+    font-weight: 500;
+    color: #71717a;
+    margin-top: 5px;
 }
 
 .cards > ul{
-    list-style-type: none;
+    list-style: none;
     display: flex;
     justify-content: end;
-    align-self: center;
+    align-items: center;
     gap: 7%;
     padding-right: 5%;
+}
+
+#im img{
+    width: 25px;
+    height: 25px;
+    filter: grayscale(100%);
 }
 
 .two-cards{
     display: grid;
     grid-template-rows: 4fr 0.5fr 4fr;
     margin-left: 2%;
-    border: 1px solid yellow;
     margin-bottom: 45px;
     padding-top: 15px;
     padding-right: 15px;
 }
 
 .two-cards > div{
-    border: 1px solid green;
     margin-right: 40px;
 }
 
@@ -290,23 +304,26 @@ button:focus{
 }
 
 .anocen{
-    border: 1px solid blue;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
 }
 
+
 .announces1{
     grid-row: 1;
-    border-bottom: 1px solid black;
-    padding-bottom: 5%;
+    padding-bottom: 3%;
     align-self: center;
 }
 
 .announces2{
     grid-row: 2;
-    border-bottom: 1px solid black;
-    padding-bottom: 5%;
+    padding-bottom: 3%;
     align-self: center;
+}
+
+.announces2 hr,
+.announces3 hr{
+    margin-bottom: 7px;
 }
 
 .announces3{
