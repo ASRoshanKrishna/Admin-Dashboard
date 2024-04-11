@@ -239,7 +239,7 @@ button:focus{
     background-color: white;
     margin: 14px;
     padding-right: 15px;
-    border-left: 6px solid #fcd34d;
+    border-left: 6px solid #facc15;
     border-radius: 9px;
     box-shadow: 2px 4px 3px #cbd5e1; 
 }
