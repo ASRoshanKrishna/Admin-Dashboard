@@ -130,7 +130,7 @@ button:focus{
     grid-template-columns: 1fr 5fr;
     font-size: large;
     align-items: center;
-    gap: 4%;
+    gap: 25px;
 }
 
 .intro > .logo{
@@ -221,7 +221,7 @@ button:focus{
 }
 
 .topics{
-    padding-left: 35px;
+    padding-left: 45px;
 }
 
 .projectcards{
@@ -232,19 +232,16 @@ button:focus{
     margin-bottom: 30px;
 }
 
-/* .cards > *{
-    border: 1px solid red;
-} */
-
 .cards{
     height: clamp(135px,185px,200px);
     display: grid;
     grid-template-rows: 1fr 1fr 2fr;
     background-color: white;
     margin: 14px;
+    padding-right: 15px;
     border-left: 6px solid #fcd34d;
     border-radius: 9px;
-    box-shadow: 0px 4px 3px #cbd5e1; 
+    box-shadow: 2px 4px 3px #cbd5e1; 
 }
 
 .c1{
@@ -298,16 +295,18 @@ button:focus{
     padding-left: 40px;
     padding-right: 50px;
     padding-bottom: 20px;
-    width: 23rem;
+    width: 350px;
     font-size: smaller;
     background-color: white;
     border-radius: 9px;
-    box-shadow: 0px 4px 3px #cbd5e1; 
+    box-shadow: 2px 4px 3px #cbd5e1; 
     color: #71717a;
 }
 
-.Site1{
+.Site1,
+.trend1 p{
     font-weight: 600;
+    margin-bottom: 3px;
     color: black;
 }
 
@@ -341,6 +340,47 @@ button:focus{
 .trend{
     grid-row: 2;
     align-self: flex-end;
+    margin-bottom: 5px;
+}
+
+.trend1{
+    display: grid;
+    grid-template-columns: 1.3fr 5fr;
+    align-items: center;
+    justify-content: center;
+    gap: 3%;
+    margin-top: 4px;
+}
+
+.trend_img1,
+.trend_img2,
+.trend_img3,
+.trend_img4{
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+}
+
+.crop1,
+.crop2,
+.crop3,
+.crop4{
+    align-self: center;
+    width: 130px;
+    height: 130px;
+    margin: -8px 0px 0px -8px;
+}
+
+.crop2{
+    margin: -8px 0px 0px -65px;
+}
+
+.crop3{
+    margin: -65px 0px -50px -8px;
+}
+
+.crop4{
+    margin: -65px 0px 0px -65px;
 }
 
 .trendcards{
@@ -349,11 +389,12 @@ button:focus{
     grid-template-rows: 1fr 1fr 1fr 1fr;
     justify-content: center;
     align-items: center;
-    width: 23rem;
+    width: 350px;
     font-size: smaller;
     background-color: white;
     border-radius: 9px;
-    box-shadow: 0px 4px 3px #cbd5e1; 
+    box-shadow: 2px 4px 3px #cbd5e1; 
+    color: #71717a;
 }
 
 .footer{
